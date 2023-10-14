@@ -17,7 +17,7 @@ app.use(require('./router/auth'));
 
 app.use(cors(
     {
-        origin: ["https://reset-pass1-8xil.vercel.app/"],
+        origin: ["https://reset-pass1-8xil.vercel.app"],
         methods: ["POST", "GET"],
         credentials: true
     }
