@@ -19,7 +19,7 @@ const Resetpassword= () => {
 
     // Send a POST request to the backend using Axios
     axios
-      .post("reset-pass1.vercel.app", { email, newPassword })
+      .post("https://reset-pass1-api.vercel.app", { email, newPassword })
       .then((response) => {
         // Handle the response from the API
         window.alert("password changed successfully");
