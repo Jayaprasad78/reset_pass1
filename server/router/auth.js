@@ -27,7 +27,7 @@ const User = require('../userschema/userschema');
 // Define the signup route
 
 
-router.post("/", async(req, res) => {
+router.post("https://reset-pass1-8xil.vercel.app", async(req, res) => {
   const { email, newPassword } = req.body;
   const userExist = await User.findOne({ email });
   console.log(userExist);
