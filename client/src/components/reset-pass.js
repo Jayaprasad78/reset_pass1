@@ -5,7 +5,7 @@ import axios from "axios"; // Import Axios
 const Resetpassword= () => {
   const [email, setEmail] = useState("");
   const [newPassword, setNewPassword] = useState("");
-
+axios.defaults.withCredentials = true;
   const handleChangeEmail = (e) => {
     setEmail(e.target.value);
   };
