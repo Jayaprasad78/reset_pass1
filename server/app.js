@@ -15,7 +15,13 @@ app.use(express.json());
 app.use(require('./router/auth'));
 
 
-
+app.use(cors(
+    {
+        origin: ["https://deploy-mern-frontend.vercel.app"],
+        methods: ["POST", "GET"],
+        credentials: true
+    }
+));
 
 // app.get('/about',(req,res)=>{
 //     res.send('About page');
