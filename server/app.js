@@ -17,21 +17,17 @@ app.use(require('./router/auth'));
 
 app.use(cors(
     {
-        origin: ["https://reset-pass1-8xil.vercel.app"],
+        origin: ["https://deploy-mern-frontend.vercel.app"],
         methods: ["POST", "GET"],
         credentials: true
     }
 ));
 
- app.get('/',(req,res)=>{
-     res.send('hello');
- });
 
 
-
-
-
-
+ app.get("/", (req, res) => {
+    res.json("Hello");
+})
 
 app.listen(port,()=>{
     console.log(`server listening on port ${port} `);
