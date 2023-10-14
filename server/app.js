@@ -23,9 +23,9 @@ app.use(cors(
     }
 ));
 
-// app.get('/about',(req,res)=>{
-//     res.send('About page');
-// });
+ app.get('/',(req,res)=>{
+     res.send('hello');
+ });
 
 
 
